@@ -74,37 +74,37 @@ Parameters that you can currently control without changing the code itself inclu
   if defined, poly_a_order is ignored.if not defined the default polynomial
   will be used
 
-  --zeta3_an            Generator3[x3_, x0_] := {x0, 2 *x0 + x3, 3*x3, 2*x3}.
+  - --zeta3_an            Generator3[x3_, x0_] := {x0, 2 *x0 + x3, 3*x3, 2*x3}.
                         this was found to be useful for zeta3 searches
-  --zeta5_an            Generator5[x5_, x3_, x0_] := {x0, 2 *x0 + x3 - 2 *x5,
+  - --zeta5_an            Generator5[x5_, x3_, x0_] := {x0, 2 *x0 + x3 - 2 *x5,
                         3*x3 - 5*x5, 2*x3, 5*x5, 2*x5}
-  --polynomial_shift1_an
+  - --polynomial_shift1_an
                         a[n] = m(m(...(x[1]*m + x[0]) + x[2]) + ...) + x[k],
                         where m=n+1
-  --polynomial_an       a[n] = n(n(...(x[1]*n + x[0]) + x[2]) + ...) + x[k].
+  - --polynomial_an       a[n] = n(n(...(x[1]*n + x[0]) + x[2]) + ...) + x[k].
                         this is the default generator
 
 * custom {b_n} series generator:
   if defined, poly_b_order is ignored. if not defined the default polynomial
   will be used
 
-  --zeta_bn             b[n] = x[0]*(n+1)^d - x[1]*(n+1)^(d-1). where
+  - --zeta_bn             b[n] = x[0]*(n+1)^d - x[1]*(n+1)^(d-1). where
                         d=function_value this was found to be useful for zeta
                         values searches.
-  --catalan_bn          x[0]*(2*n+1)^4 + x[1]*(2*n+1)^3
-  --polynomial_shift1_bn
+  - --catalan_bn          x[0]*(2*n+1)^4 + x[1]*(2*n+1)^3
+  - --polynomial_shift1_bn
                         b[n] = m(m(...(x[1]*m + x[0]) + x[2]) + ...) + x[k],
                         where m=n+1
-  --polynomial_shift2n1_bn
+  - --polynomial_shift2n1_bn
                         b[n] = m(m(...(x[1]*m + x[0]) + x[2]) + ...) + x[k],
                         where m=2*n+1
-  --integer_factorization_bn
+  - --integer_factorization_bn
                         b[n] = x[0]*(term1)^d1*(term2)^d2*..., where
                         sum(d)=x[1]this is a unique generator using
                         combination permutations instead of cartesian product.
                         current terms are: (n+1), (n+2), (n+3), (2n), (2n-1),
                         (2n+3), (2n+5)
-  --polynomial_bn       b[n] = n(n(...(x[1]*n + x[0]) + x[2]) + ...) + x[k].
+  - --polynomial_bn       b[n] = n(n(...(x[1]*n + x[0]) + x[2]) + ...) + x[k].
                         this is the default generator
 
 
